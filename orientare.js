@@ -4,7 +4,6 @@ function on_device_orientation(evt){
   var alpha = evt.alpha;
   var beta = evt.beta;
   var gamma = evt.gamma;
-}
 
 document.getElementById("a").innerHTML = "alpha = "+alpha;
 document.getElementById("b").innerHTML = "beta = " + beta;
@@ -22,3 +21,5 @@ context.rotate(alpha * Math.PI/180);
 context.beginPath();
 context.rect(-latura_patrat/2,-latura_patrat/2,latura_patrat, latura_patrat);
 context.stroke();
+
+}
