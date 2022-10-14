@@ -20,6 +20,13 @@ context.translate(centru.x/2, centru.y/2);
 context.rotate(alpha * Math.PI/180);
 context.beginPath();
 context.rect(-latura_patrat/2,-latura_patrat/2,latura_patrat, latura_patrat);
-context.stroke();
+ctx.arc(200, 100, convert_positive(gamma), 0, 2*Math.PI, false);
+ctx.stroke();
 
 }
+function convert_positive(a) {
+        if (a < 0) {
+            a = a * -1;
+        }
+        return a;
+    }
